@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Массивы</title>
+</head>
+<body>
+	<script>
+		var arrElements = Number(prompt("Задаем число элементов в массиве"));
+		var arr = [];
+		var count = 0;
+		for(i = 0; i < arrElements; i++){
+			var rnd = Math.random() * arrElements;
+			arr.push(rnd.toFixed(1) * arrElements);
+			if(Number.isInteger(arr[i])){
+				count++;
+			}
+		};
+		console.log(arr);
+		alert(`Количество целых чисел в созданном массиве: ${count}`);
+	</script>
+</body>
+</html>
